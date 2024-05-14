@@ -2,6 +2,16 @@
 
 A simple discord bot that translates messages using the Google Cloud Translation API.
 
+## Commands / Interactions
+
+The bot has the following commands:
+
+* `!translate [target-language]` - Reply to any message to translate it to the target language. If the target language is not specified, the bot will translate the message to English.
+* `/translate-text [message] [target-language]` - Translate the provided message to the target language. If the target language is not specified, the bot will translate the message to English.
+* `!help` - Display a list of available commands and useful information.
+* `!register` - Register the `translate-text` command. This command is only available to users with the `ADMINISTRATOR` permission. 
+* `!unregister` - Unregister the `translate-text` command. This command is only available to users with the `ADMINISTRATOR` permission.
+
 ## Installation
 
 In order to run this bot, you need to have a [Google Cloud](https://cloud.google.com/translate) account and a project with the Cloud Translation API enabled. You also need to have a Discord bot token. You can get one by creating a new bot in the [Discord Developer Portal](https://discord.com/developers/docs/intro).
