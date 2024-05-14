@@ -1,0 +1,26 @@
+[package]
+authors = ["CodeDead <admin@codedead.com>"]
+name = "discord_translate_bot"
+description = "A simple Discord bot that translates messages using the Google Translate API."
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3"
+rust-version = "1.78.0"
+
+[dependencies]
+dotenvy = "0.15.7"
+env_logger = "0.11.3"
+reqwest = { version = "0.12", features = ["json"] }
+serde = "1.0"
+serde_json = "1.0"
+serenity = "0.12.1"
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+log = "0.4.21"
+
+[profile.release]
+lto = true
+strip = "symbols"
+debug = false
+panic = "abort"
+opt-level = "z"
+codegen-units = 1
