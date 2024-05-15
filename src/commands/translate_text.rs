@@ -11,7 +11,7 @@ use serenity::builder::{CreateCommand, CreateCommandOption};
 /// A `CreateCommand` instance
 pub fn register() -> CreateCommand {
     CreateCommand::new("translate-text")
-        .description("Translate a message to English")
+        .description("Translate a message")
         .add_option(
             CreateCommandOption::new(
                 serenity::all::CommandOptionType::String,
