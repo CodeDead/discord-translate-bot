@@ -14,7 +14,10 @@ COPY src ./src
 RUN cargo build --release
 
 # Start a new stage for the runtime image
-FROM debian:stable-slim
+FROM debian:bookworm-slim
+
+# Install required dependencies
+RUN apt-get update && apt install -y openssl
 
 # Set the environment variables
 ENV GOOGLE_TRANSLATE_TOKEN=your_google_translate_token
