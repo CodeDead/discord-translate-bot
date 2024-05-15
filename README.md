@@ -1,4 +1,8 @@
 # discord-translate-bot
+![GitHub top language](https://img.shields.io/github/languages/top/CodeDead/discord-translate-bot)
+![GitHub](https://img.shields.io/github/license/CodeDead/discord-translate-bot)
+[![Release](https://github.com/CodeDead/discord-translate-bot/actions/workflows/release.yml/badge.svg)](https://github.com/CodeDead/discord-translate-bot/actions/workflows/release.yml)
+[![Test](https://github.com/CodeDead/discord-translate-bot/actions/workflows/test.yml/badge.svg)](https://github.com/CodeDead/discord-translate-bot/actions/workflows/test.yml)
 
 A simple discord bot that translates messages using the Google Cloud Translation API.
 
