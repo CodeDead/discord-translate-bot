@@ -14,7 +14,11 @@ use serenity::prelude::*;
 
 #[tokio::main]
 async fn main() {
-    dotenvy::dotenv().expect("Failed to load .env file");
+    match dotenvy::dotenv() {
+        Ok(_) => {},
+        Err(e) => println!("Could not load .env file: {e}"),
+    };
+
     env_logger::init();
 
     let config = Config::new().expect("Failed to load configuration");

@@ -20,7 +20,7 @@ The bot has the following commands:
 
 In order to run this bot, you need to have a [Google Cloud](https://cloud.google.com/translate) account and a project with the Cloud Translation API enabled. You also need to have a Discord bot token. You can get one by creating a new bot in the [Discord Developer Portal](https://discord.com/developers/docs/intro).
 
-A `.env` file is required to run the bot. The file should contain the following variables:
+A `.env` file or environment variables are required to run the bot. The file should contain the following variables:
 
 ```env
 DISCORD_TOKEN=your_discord_bot_token
