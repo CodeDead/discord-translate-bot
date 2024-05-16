@@ -33,7 +33,7 @@ pub async fn handle(
         .await
     {
         Ok(translation) => {
-            embeds::translation::get_embed(&original_referenced_message, &translation, "en")
+            embeds::translation::get_embed(&original_referenced_message, &translation, target)
         }
         Err(why) => {
             error!("Error translating message: {:?}", why.message);
