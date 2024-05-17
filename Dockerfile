@@ -17,7 +17,7 @@ RUN cargo build --release
 FROM debian:stable-slim
 
 # Install required dependencies
-RUN apt-get update && apt install -y openssl
+RUN apt-get update && apt install -y openssl ca-certificates
 
 # Set the environment variables
 ENV GOOGLE_TRANSLATE_TOKEN=your_google_translate_token
