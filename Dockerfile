@@ -14,7 +14,7 @@ COPY src ./src
 RUN cargo build --release
 
 # Start a new stage for the runtime image
-FROM debian:bookworm-slim
+FROM debian:stable-slim
 
 # Install required dependencies
 RUN apt-get update && apt install -y openssl
