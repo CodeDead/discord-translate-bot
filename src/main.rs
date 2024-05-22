@@ -15,7 +15,7 @@ use serenity::prelude::*;
 #[tokio::main]
 async fn main() {
     match dotenvy::dotenv() {
-        Ok(_) => {},
+        Ok(_) => {}
         Err(e) => println!("Could not load .env file: {e}"),
     };
 
